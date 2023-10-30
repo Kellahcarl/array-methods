@@ -32,3 +32,19 @@ const friends: string[] = ["James", "Marylyn", "Moses", "Anne", "Fredy"];
 
 let result = filterName(friends);
 console.log(result);
+
+//easy function
+
+const filterFn = (arr, predicate) => {
+  return arr.filter(predicate);
+};
+
+const predicateFn = (elem) => {
+  return elem.length === 4;
+};
+
+const names = ["Ryan", "Kieran", "Jason", "Yous"];
+
+const output1 = filterFn(names, predicateFn);
+
+console.log(output);
